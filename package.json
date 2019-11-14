@@ -2,6 +2,7 @@
   "name": "tetra",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "react-scripts": "3.0.1",
     "typeface-vt323": "^0.0.72"
