@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: 'VT323', 'Courier New', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  position: fixed;
+  color: #6C6C6C;
+  background-color: #DDFFDF;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.game {
+  display: block;
+  width: 100%;
+  max-width: 414px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  box-sizing: border-box;
+}
+
+.intro {
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+  height: 100%;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instructions p {
+  margin: 8px 0px;
+  padding-left: 16px;
+}
+
+.instructions p:first-child {
+  padding-left: 0px;
+}
+
+.title {
+  text-align: center;
+  margin: 0px;
+  font-size: 60px;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+a {
+  color: #8D8D8D;
+  font-weight: bold;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.gameplay {
+  display: grid;
+  grid-template-rows: auto min-content;
+  height: 100%;
+  padding: 32px;
+  box-sizing: border-box;
+  grid-gap: 16px;
+}
+
+.canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: solid thin #000;
+  pointer-events: none;
+}
+
+.status {
+  display: grid;
+  grid-template-columns: auto auto min-content;
+  white-space: nowrap;
+}
+
+.desktop .status {
+  grid-template-columns: auto min-content;
+}
+
+.pause {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  font-weight: normal;
+  outline: none;
+}
+
+.desktop .pause {
+  display: none;
+}
+
+.alert {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 8px 16px;
+  background-color: #DDFFDF;
+  border: solid thin #6C6C6C;
+}
+
+.hidden {
+  display: none;
+}
